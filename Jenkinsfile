@@ -29,11 +29,11 @@ pipeline{
 
     }
 
-     stage('Run and test container '){
+     stage('Run and test container'){
 
        steps{
           sh(script:'docker run -it -d --name devops-test subigkrishnan/dockrepo:1.0.2')
-          sh(script:'docker exec -it devops-test 'ls /'')
+          sh(script:'docker exec -it devops-test ls /')
 
             }
 
