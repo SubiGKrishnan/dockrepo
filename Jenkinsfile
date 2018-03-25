@@ -33,7 +33,7 @@ pipeline{
 
        steps{
           sh(script:'docker run -it -d --name devops-test subigkrishnan/dockrepo:1.0.2')
-          sh(script:'docker exec -it devops-test ls /')
+          sh(script:'docker exec devops-test ls /')
 
             }
 
