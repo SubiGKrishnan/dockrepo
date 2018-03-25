@@ -1,3 +1,3 @@
 FROM alpine
-COPY target/*.jar /
+COPY target/*jar /
 
